@@ -1,4 +1,4 @@
-# Simple Leader Election with Kubernetes and Docker
+# Simple Leader Election with Kubernetes and Docke
 Implementing leader election in Kubernetes 
 
 The first requirement in leader election is the specification of the set of candidates for becoming the leader. Kubernetes already uses Endpoints to represent a replicated set of pods that comprise a service, so we will re-use this same object. (aside: You might have thought that we would use ReplicationControllers, but they are tied to a specific binary, and generally you want to have a single leader even if you are in the process of performing a rolling update)
